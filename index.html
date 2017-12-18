@@ -2,12 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="tab icon" href="images/starwars.png"/>
     <title>Star Wars Quiz</title>
   </head>
   <body>
-
+    <div id="background">
+      <img src="images/galaxyBackground.jpg" alt="star wars galaxy background">
+    </div>
+    <div class="container" style="text-align:center;">
+      <img id="starWarsLogo" class="img-responsive" src="images/starWarsYellowLogo.png" alt="star wars logo yellow">
+      <form id="nameForm">
+        <input type="text" name="userName" class="field" placeholder="Jedi's Name" required />
+        <input type="submit" value="Press Enter" class="submit"></input>
+      </form>
+    </div>
   </body>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="javascript/index.js"></script>
 </html>
