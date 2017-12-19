@@ -179,7 +179,7 @@ function findMatch(gender, old, type, evil, name) {
       document.getElementById("imgTag").src = matchImage;
       document.getElementById("blurbTag").innerHTML = matchBlurb;
       document.getElementById("nameTag").innerHTML = matchName;
-      document.getElementById("headerText").innerHTML = "Hello " + goodOrBad + name + " your charachter most resmembles the legendary " + matchName + " .";
+      document.getElementById("headerText").innerHTML = "Hello " + goodOrBad + name + " your charachter traits most resmemble the legendary " + matchName + " .";
       break;
     }
     else {
