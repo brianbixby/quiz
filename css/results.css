@@ -1,8 +1,10 @@
 .imageOuterDiv {
-    padding-top: 56.25%;
-    overflow: hidden;
-    position: relative;
-    background: #0e0e0e;
+  padding-top: 56.25%;
+  position: relative;
+  background: #0e0e0e;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  overflow: hidden;
 }
 .imageOuterDiv img {
   position: absolute;
@@ -10,6 +12,7 @@
   height: 100%;
   top: 0;
   left: 0;
+
 }
 .contentWrapper {
   border-color: #9e4f60;
@@ -20,4 +23,12 @@
   font-size: 1rem;
   z-index: 2;
   padding: 0.9em 0.84em;
+  background-size: 7px;
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-image: url(../images/background.png);
+}
+.outerContentWrapper {
+  padding: 0 12px;
+  margin-top: 30px;
 }

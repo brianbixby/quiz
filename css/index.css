@@ -1,0 +1,62 @@
+#subHeader {
+  color: #FFF;
+  text-align: center;
+}
+#starLogo, #warsLogo {
+  margin: auto;
+}
+#author {
+  text-align: center;
+  color: rgba(255,255,255,.8);
+  margin: 30px auto;
+}
+#submitButton {
+  background: yellow;
+  border-color: yellow;
+  border-radius: 5%;
+  color: rgba(0,0,0,.5);
+}
+#submitButton:hover {
+  background: rgba(255,255,0,.8);
+  color: rgba(0,0,0,.8);
+}
+#textBox {
+  border-radius: 3%;
+  border-color: transparent;
+}
+@media (max-width: 599px) {
+  #starLogo, #warsLogo {
+    width: 270px;
+  }
+  #subHeader {
+    font-size: 21px;
+  }
+  #homeContainer {
+    margin-top: 150px;
+    margin-top: calc((100vh - 268px)/2);
+  }
+}
+@media (min-width: 600px) {
+  #starLogo, #warsLogo {
+    max-width: 333px;
+  }
+  #subHeader {
+    font-size: 26px;
+  }
+  #homeContainer {
+    margin-top: 300px;
+    margin-top: calc((100vh - 295px)/2);
+  }
+}
+@media (min-width: 992px) {
+  #starLogo, #warsLogo {
+    max-width: 500px;
+  }
+  #subHeader {
+    font-size: 38px;
+  }
+  #homeContainer {
+    margin-top: 350px;
+    margin-top: calc((100vh - 383px)/2);
+  }
+}

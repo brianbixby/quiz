@@ -16,11 +16,3 @@
   min-width: 50%;
   min-height: 50%;
 }
-#starWarsLogo {
-  margin: 50px auto;
-}
-@media (min-width: 992px) {
-  #starWarsLogo {
-    max-width: 720px;
-  }
-}
