@@ -5,12 +5,12 @@ var form = document.getElementById(formIDs[formCounter]);
 
 function localStore(event) {
   event.preventDefault();
-  console.log(form.elements[formNames[formCounter]].value);
+  // console.log(form.elements[formNames[formCounter]].value);
   localStorage.setItem(formNames[formCounter], form.elements[formNames[formCounter]].value);
-  document.getElementById(formIDs[formCounter]).style.display = 'none';
+  document.getElementById(formIDs[formCounter]).style.display = "none";
   if(formCounter < 3){
-    document.getElementById(formIDs[formCounter+1]).style.display = 'block';
-    console.log(formCounter);
+    document.getElementById(formIDs[formCounter+1]).style.display = "block";
+    // console.log(formCounter);
     form = document.getElementById(formIDs[formCounter+1]);
     form.addEventListener("submit", localStore);
   }
