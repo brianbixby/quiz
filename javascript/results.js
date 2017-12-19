@@ -1,9 +1,3 @@
-console.log(localStorage.userName);
-console.log(localStorage.question0);
-console.log(localStorage.question1);
-console.log(localStorage.question2);
-console.log(localStorage.question3);
-
 var userName = localStorage.userName;
 var sex = localStorage.question0;
 var age = localStorage.question1;
@@ -175,7 +169,7 @@ function findMatch(gender, old, type, evil, name) {
       matchName = charachters[i].name;
       matchImage = charachters[i].image;
       matchBlurb = charachters[i].blurb;
-      console.log(matchName, matchImage, matchBlurb);
+      // console.log(matchName, matchImage, matchBlurb);
       document.getElementById("imgTag").src = matchImage;
       document.getElementById("blurbTag").innerHTML = matchBlurb;
       document.getElementById("nameTag").innerHTML = matchName;
@@ -183,7 +177,7 @@ function findMatch(gender, old, type, evil, name) {
       break;
     }
     else {
-      console.log("broken");
+
     }
   }
 }
