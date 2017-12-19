@@ -4,6 +4,7 @@ console.log(localStorage.question1);
 console.log(localStorage.question2);
 console.log(localStorage.question3);
 
+var userName = localStorage.userName;
 var sex = localStorage.question0;
 var age = localStorage.question1;
 var race = localStorage.question2;
@@ -160,8 +161,15 @@ var charachters = [
   },
 ];
 
-findMatch(sex, age, race, side);
-function findMatch(gender, old, type, evil) {
+findMatch(sex, age, race, side, userName);
+function findMatch(gender, old, type, evil, name) {
+  var goodOrBad;
+  if(evil = "good") {
+    goodOrBad = "Jedi Master ";
+  }
+  else {
+    goodOrBad = "Darth ";
+  }
   for(var i=0; i<charachters.length; i++) {
     if(charachters[i].age == age && charachters[i].race == type && charachters[i].side == evil && charachters[i].sex == gender) {
       matchName = charachters[i].name;
@@ -171,6 +179,7 @@ function findMatch(gender, old, type, evil) {
       document.getElementById("imgTag").src = matchImage;
       document.getElementById("blurbTag").innerHTML = matchBlurb;
       document.getElementById("nameTag").innerHTML = matchName;
+      document.getElementById("headerText").innerHTML = "Hello " + goodOrBad + name + " your charachter most resmembles the legendary " + matchName + " .";
       break;
     }
     else {

@@ -16,3 +16,30 @@
   min-width: 50%;
   min-height: 50%;
 }
+#quizStarWarsLogoP {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#quizStarWarsLogoP a:hover{
+  opacity: .8;
+}
+#quizStarWarsLogo {
+  height: auto;
+  margin: 20px auto 0;
+}
+@media (max-width: 599px) {
+ #quizStarWarsLogo {
+    width: 270px;
+  }
+}
+@media (min-width: 600px) {
+ #quizStarWarsLogo {
+    max-width: 333px;
+  }
+}
+@media (min-width: 992px) {
+ #quizStarWarsLogo {
+    max-width: 500px;
+  }
+}

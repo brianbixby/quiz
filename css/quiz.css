@@ -42,24 +42,6 @@ form {
   width: 49%;
   text-align: center;
 }
-/*.optionsRow {
-    background: rgba(255,255,255,.1);
-    border-radius: 6px;
-}*/
-#quizStarWarsLogoP {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-#quizStarWarsLogoP a:hover{
-  opacity: .8;
-}
-#quizStarWarsLogo {
-  max-width: 500px;
-  height: auto;
-  margin: 20px auto 0;
-}
-
 @media (min-width: 768px) {
   .inputAndImg {
     width: 345px;
