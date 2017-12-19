@@ -1,0 +1,15 @@
+input[type="submit"] {
+  display: block;
+  margin: 25px auto;
+}
+img {
+  height: 150px;
+  width: auto;
+  margin: 20px;
+}
+form {
+  margin: 50px auto;
+}
+#quizForm1, #quizForm2, #quizForm3 {
+  display: none;
+}
