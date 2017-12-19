@@ -13,53 +13,78 @@
     <div id="background">
       <img src="../images/galaxyBackground.jpg" alt="star wars galaxy background">
     </div>
-    <div class="container" style="text-align:center;">
+    <div id="quizContainer" class="container">
+      <p id="quizStarWarsLogoP"><a href="/"><img id="quizStarWarsLogo" src="../images/starWarsYellowLogo.png" alt="star wars logo"></a></p>
       <form id="quizForm0">
         <div class="questionOuterDiv">
-          <p class="question"> question one</p>
-          <input type="radio" name="question0" value="male" class="options">
-            <img src="../images/luke.png">
-          </input>
-          <input type="radio" name="question0" value="female" class="options">
-            <img src="../images/rey.png">
-          </input>
-          <input type="submit" value="Press Enter" class="submit"></input>
+          <p class="question"><span class="questionNumber">1. </span> Please select the charachter that you more closely identify with.</p>
+          <div class="row optionsRow">
+            <div class="inputAndImg">
+              <input type="radio" name="question0" value="male" class="options" required>
+                <img src="../images/luke.png">
+              </input>
+            </div>
+            <div class="inputAndImg">
+              <input type="radio" name="question0" value="female" class="options">
+                <img src="../images/rey.png">
+              </input>
+            </div>
+          </div>
+          <input type="submit" value="Next Question" class="submit"></input>
         </div>
       </form>
       <form id="quizForm1">
         <div class="questionOuterDiv">
-          <p class="question"> question one</p>
-          <input type="radio" name="question1" value="young" class="options">
-            <img src="../images/annakin.png">
-          </input>
-          <input type="radio" name="question1" value="old" class="options">
-            <img src="../images/vader.png">
-          </input>
-          <input type="submit" value="Press Enter" class="submit"></input>
+          <p class="question"> <span class="questionNumber">2. </span> Please select the charachter that you more closely identify with.</p>
+          <div class="row optionsRow">
+            <div class="inputAndImg">
+              <input type="radio" name="question1" value="young" class="options" required>
+                <img src="../images/annakin.png">
+              </input>
+            </div>
+            <div class="inputAndImg">
+              <input type="radio" name="question1" value="old" class="options">
+                <img src="../images/vader.png">
+              </input>
+            </div>
+          </div>
+          <input type="submit" value="Next Question" class="submit"></input>
         </div>
       </form>
       <form id="quizForm2">
         <div class="questionOuterDiv">
-          <p class="question"> question one</p>
-          <input type="radio" name="question2" value="human" class="options">
-            <img src="../images/palpatine.png">
-          </input>
-          <input type="radio" name="question2" value="other" class="options">
-            <img src="../images/jabba.png">
-          </input>
-          <input type="submit" value="Press Enter" class="submit"></input>
+          <p class="question"> <span class="questionNumber">3. </span> Please select the charachter that you more closely identify with.</p>
+          <div class="row optionsRow">
+            <div class="inputAndImg">
+              <input type="radio" name="question2" value="human" class="options" required>
+                <img src="../images/palpatine.png">
+              </input>
+            </div>
+            <div class="inputAndImg">
+              <input type="radio" name="question2" value="other" class="options">
+                <img src="../images/jabba.png">
+              </input>
+            </div>
+          </div>
+          <input type="submit" value="Next Question" class="submit"></input>
         </div>
       </form>
       <form id="quizForm3">
         <div class="questionOuterDiv">
-          <p class="question"> question one</p>
-          <input type="radio" name="question3" value="bad" class="options">
-            <img src="../images/DeathStar.png">
-          </input>
-          <input type="radio" name="question3" value="good" class="options">
-            <img src="../images/MillenniumFalcon.png">
-          </input>
-          <input type="submit" value="Press Enter" class="submit"></input>
+          <p class="question"><span class="questionNumber">4. </span> Please select the charachter that you more closely identify with.</p>
+          <div class="row optionsRow">
+            <div class="inputAndImg">
+              <input type="radio" name="question3" value="bad" class="options" required>
+                <img src="../images/DeathStar.png">
+              </input>
+            </div>
+            <div class="inputAndImg">
+              <input type="radio" name="question3" value="good" class="options">
+                <img src="../images/MillenniumFalcon.png">
+              </input>
+            </div>
+          </div>
+          <input type="submit" value="Submit Quiz" class="submit"></input>
         </div>
       </form>
     </div>

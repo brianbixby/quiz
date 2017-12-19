@@ -1,6 +1,9 @@
 input[type="submit"] {
   display: block;
-  margin: 25px auto;
+  margin: 10px auto;
+}
+input[type='radio']:checked:after {
+  background-color: yellow;
 }
 img {
   height: 150px;
@@ -8,8 +11,68 @@ img {
   margin: 20px;
 }
 form {
-  margin: 50px auto;
+  margin: 25px auto;
+  padding: 15px 0;
+  background: rgba(255,255,255,.1);
+  border-radius: 6px;
 }
 #quizForm1, #quizForm2, #quizForm3 {
   display: none;
+}
+.questionNumber {
+  color: yellow;
+  margin: 0 15px;
+}
+.question {
+  color: #FFF;
+  font-size: 22px;
+}
+.submit {
+  background: yellow;
+  border-color: yellow;
+  border-radius: 5%;
+  color: rgba(0,0,0,.5);
+}
+.submit:hover {
+  background: rgba(255,255,0,.8);
+  color: rgba(0,0,0,.8);
+}
+.inputAndImg {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+/*.optionsRow {
+    background: rgba(255,255,255,.1);
+    border-radius: 6px;
+}*/
+#quizStarWarsLogoP {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#quizStarWarsLogoP a:hover{
+  opacity: .8;
+}
+#quizStarWarsLogo {
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto 0;
+}
+
+@media (min-width: 768px) {
+  .inputAndImg {
+    width: 345px;
+    margin: 0 5px;
+  }
+}
+@media (min-width: 992px) {
+  #quizContainer {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  #quizContainer {
+    width: 750px;
+  }
 }
