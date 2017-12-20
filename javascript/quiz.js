@@ -5,7 +5,7 @@ var form = document.getElementById(formIDs[formCounter]);
 
 function localStore(event) {
   event.preventDefault();
-  // console.log(form.elements[formNames[formCounter]].value);
+  // console.log(formNames[formCounter], form.elements[formNames[formCounter]].value);
   localStorage.setItem(formNames[formCounter], form.elements[formNames[formCounter]].value);
   document.getElementById(formIDs[formCounter]).style.display = "none";
   if(formCounter < 3){

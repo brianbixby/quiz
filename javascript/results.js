@@ -4,6 +4,8 @@ var age = localStorage.question1;
 var race = localStorage.question2;
 var side = localStorage.question3;
 
+// console.log(userName, sex, age, race, side);
+
 var matchName;
 var matchImage;
 var matchBlurb;
@@ -109,15 +111,6 @@ var charachters = [
     blurb: "Rey is a Jakku scavenger, a survivor toughened by life on a harsh desert planet. When the fugitive droid BB-8 appeals to her for help, Rey finds herself drawn into a galaxy-spanning conflict. Despite dismissing herself as “no one,” she learns that her life is being shaped by the mysterious power of the Force. She seeks out Luke Skywalker, the lost Jedi Master, in hopes that he will aid the Resistance against the First Order and help her learn to control her powers.",
   },
   {
-    name: "Aayla Secura",
-    age: "young",
-    race: "other",
-    side: "good",
-    sex: "female",
-    image: "../images/aayla.png",
-    blurb: "With an athletic build, an exotic beauty, and blue skin, Aayla Secura stood out among the many faces of the Jedi ranks. A cunning warrior and Jedi Knight during the rise of the Clone Wars, Aayla fought alongside Clone Commander Bly on many exotic battlefields. Having mastered the emotional detachment necessary in the Jedi Order, she always tried to pass on what she had learned to others. Aayla was killed, along with many other Jedi Generals, when her troops turned on her in reaction to Supreme Chancellor Palpatine’s broadcast of Order 66.",
-  },
-  {
     name: "Aurra Sing",
     age: "old",
     race: "other",
@@ -136,14 +129,23 @@ var charachters = [
     blurb: "Clad in distinctive armor of salvaged chromium, Captain Phasma commands the First Order’s legions of stormtroopers. A tough veteran commander, she has no use for fancy titles or complex war rooms, preferring to lead her troops in battle against the First Order’s enemies.",
   },
   {
-    name: "Lomi Plo",
+    name: "Aayla Secura",
     age: "young",
     race: "other",
-    side: "bad",
+    side: "good",
     sex: "female",
-    image: "../images/lomi.png",
-    blurb: "Lomi Plo is the main antagonist of the Dark Nest trilogy. She is the Unseen Queen of the Gorog nest. Furthermore, she was the dark side Master of fallen Jedi Knight Alema Rar and (earlier) the Dark Jedi Welk, both having served as Night Herald of the Dark Nest.",
+    image: "../images/aayla.png",
+    blurb: "With an athletic build, an exotic beauty, and blue skin, Aayla Secura stood out among the many faces of the Jedi ranks. A cunning warrior and Jedi Knight during the rise of the Clone Wars, Aayla fought alongside Clone Commander Bly on many exotic battlefields. Having mastered the emotional detachment necessary in the Jedi Order, she always tried to pass on what she had learned to others. Aayla was killed, along with many other Jedi Generals, when her troops turned on her in reaction to Supreme Chancellor Palpatine’s broadcast of Order 66.",
   },
+  {
+   name: "Lomi Plo",
+   age: "young",
+   race: "other",
+   side: "bad",
+   sex: "female",
+   image: "../images/lomi.png",
+   blurb: "Lomi Plo is the main antagonist of the Dark Nest trilogy. She is the Unseen Queen of the Gorog nest. Furthermore, she was the dark side Master of fallen Jedi Knight Alema Rar and (earlier) the Dark Jedi Welk, both having served as Night Herald of the Dark Nest.",
+ },
   {
     name: "Darth Zannah",
     age: "young",
@@ -156,16 +158,18 @@ var charachters = [
 ];
 
 findMatch(sex, age, race, side, userName);
-function findMatch(gender, old, type, evil, name) {
+function findMatch(gender, old, type, side, name) {
   var goodOrBad;
-  if(evil = "good") {
+  if(side == "good") {
     goodOrBad = "Jedi Master ";
   }
   else {
     goodOrBad = "Darth ";
   }
+  // console.log("user inputs", gender, old, type, side, name);
   for(var i=0; i<charachters.length; i++) {
-    if(charachters[i].age == age && charachters[i].race == type && charachters[i].side == evil && charachters[i].sex == gender) {
+    // console.log(charachters[i].sex, charachters[i].age, charachters[i].race, charachters[i].side);
+    if(charachters[i].sex == gender && charachters[i].age == old && charachters[i].race == type && charachters[i].side == side) {
       matchName = charachters[i].name;
       matchImage = charachters[i].image;
       matchBlurb = charachters[i].blurb;
@@ -173,7 +177,7 @@ function findMatch(gender, old, type, evil, name) {
       document.getElementById("imgTag").src = matchImage;
       document.getElementById("blurbTag").innerHTML = matchBlurb;
       document.getElementById("nameTag").innerHTML = matchName;
-      document.getElementById("headerText").innerHTML = "Hello " + goodOrBad + name + " your charachter traits most resmemble the legendary " + matchName + " .";
+      document.getElementById("headerText").innerHTML = "Hello " + goodOrBad + name + ", your character traits most resmemble the legendary " + matchName + " .";
       break;
     }
     else {
