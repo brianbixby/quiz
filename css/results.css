@@ -35,3 +35,51 @@
     height: auto;
   }
 }
+.row {
+ padding: 0 15px;
+}
+.container {
+ margin: auto;
+}
+@media (min-width: 768px) {
+ .container {
+   max-width: 750px;
+ }
+ #imgTag {
+   width: 282.5px;
+   height: auto;
+   margin: 0 15px;
+ }
+ .contentWrapper {
+   padding: 0 15px;
+ }
+}
+@media (min-width: 992px) {
+ .container {
+   max-width: 970px;
+ }
+ #imgTag {
+   width: 293.3px;
+   height: auto;
+   margin: 0 15px;
+   float: right;
+ }
+ .contentWrapper {
+   padding: 0 15px;
+ }
+}
+@media (min-width: 1200px) {
+ .container {
+   max-width: 1170px;
+ }
+ #imgTag {
+   width: 360px;
+   height: auto;
+   margin: 0 15px;
+   float: right;
+ }
+ .contentWrapper {
+   padding: 0 15px;
+   max-width: 585px;
+ }
+}

@@ -51,6 +51,7 @@ form {
 @media (min-width: 992px) {
   #quizContainer {
     width: 750px;
+    margin: auto;
   }
 }
 @media (min-width: 1200px) {
